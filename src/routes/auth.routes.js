@@ -33,7 +33,7 @@ router.post("/register", async (req, res) => {
                 email,
                 username,
                 password: hashedPassword,
-                role: "USER"
+                
             },
         });
 
@@ -70,11 +70,12 @@ router.post("/login", async (req, res) => {
             });
         }
 
-        if (!user.isActive) {
+        if (user.isActive === false) {
             return res.status(403).json({
                 message: "User is blocked",
             });
         }
+
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
 
