@@ -1,7 +1,7 @@
 ## 🔐 AuthX Backend API
 
 Base URL:
-https://authx-backend.onrender.com
+https://authx-backend-fd38.onrender.com
 
 ### Authentication Flow
 1. Register user
