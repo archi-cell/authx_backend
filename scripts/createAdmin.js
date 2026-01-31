@@ -1,4 +1,4 @@
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import prisma from "../src/config/db.js"; // MUST include .js
 
 async function createAdmin() {
