@@ -10,6 +10,7 @@ import adminRoutes from "./routes/admin.js";
 import limiter from "./middleware/rateLimiter.js";
 
 const app = express();
+app.set("trust proxy", 1);
 
 // middleware to read JSON
 app.use(express.json());
